@@ -25,5 +25,13 @@ class MainActivity : AppCompatActivity() {
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
         }
 
+        btnPrev.setOnClickListener {
+            viewPager2.currentItem = viewPager2.currentItem - 1
+        }
+
+        btnNext.setOnClickListener {
+            viewPager2.currentItem = viewPager2.currentItem + 1
+        }
+
     }
 }
